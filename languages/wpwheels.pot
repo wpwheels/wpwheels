@@ -1,0 +1,507 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WPWheels\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-15 05:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Domain: wpwheels"
+
+#: inc/patterns/pricing.php:169
+msgid "$199"
+msgstr ""
+
+#: inc/patterns/pricing.php:43
+msgid "$49"
+msgstr ""
+
+#: inc/patterns/pricing.php:111
+msgid "$99"
+msgstr ""
+
+#: inc/patterns/pricing.php:47 inc/patterns/pricing.php:115
+#: inc/patterns/pricing.php:173
+msgid "/year"
+msgstr ""
+
+#: inc/patterns/404-basic.php:6
+msgid "404 Basic"
+msgstr ""
+
+#: inc/patterns/cta-grid.php:25 inc/patterns/footer-mega.php:30
+msgid "About Us"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:51
+msgid "Accessibility"
+msgstr ""
+
+#: inc/patterns/pricing.php:141
+msgid "Additional Block Patterns"
+msgstr ""
+
+#: inc/patterns/pricing.php:38
+msgid "Basic"
+msgstr ""
+
+#: inc/patterns/pricing.php:73
+msgid "Block Pattern Library"
+msgstr ""
+
+#: inc/tgm/tgm.php:21
+msgid "BlockWheels"
+msgstr ""
+
+#: inc/patterns/news.php:20
+msgid "Blogs"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:43
+msgid "Brand Guide"
+msgstr ""
+
+#: inc/patterns/hero-classic.php:33
+msgid "Buy Product"
+msgstr ""
+
+#: inc/patterns/cta-basic.php:6
+msgid "Call to Action Basic"
+msgstr ""
+
+#: inc/patterns/cta-grid.php:6
+msgid "Call to Action Grid"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:86
+msgid "Connect"
+msgstr ""
+
+#: inc/patterns/faq.php:33
+msgid "Contact Us"
+msgstr ""
+
+#: inc/patterns/footer-basic.php:13 inc/patterns/footer-mega.php:119
+msgid "Copyright © %d WPWheels — Powered by "
+msgstr ""
+
+#: inc/patterns/footer-mega.php:71
+msgid "Copywriting"
+msgstr ""
+
+#: inc/patterns/testimonials.php:120
+msgid "Designer"
+msgstr ""
+
+#: inc/patterns/testimonials.php:92
+msgid "Developer"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:67
+msgid "Development"
+msgstr ""
+
+#: inc/patterns/services.php:45
+msgid "Digital Marketing"
+msgstr ""
+
+#: inc/patterns/faq.php:82
+msgid "Do you offer a Guarantee?"
+msgstr ""
+
+#: inc/patterns/faq.php:64
+msgid "Do you offer free estimates?"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:107
+msgid "Dribbble"
+msgstr ""
+
+#: inc/patterns/pricing.php:164
+msgid "Enterprise"
+msgstr ""
+
+#: inc/patterns/pricing.php:125
+msgid "Everything in Basic"
+msgstr ""
+
+#: inc/patterns/pricing.php:183
+msgid "Everything in Premium"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:91
+msgid "Facebook"
+msgstr ""
+
+#: inc/patterns/block-patterns.php:8 inc/patterns/faq.php:6
+#: inc/patterns/faq.php:19
+msgid "FAQ"
+msgstr ""
+
+#: inc/patterns/hero-classic.php:19
+msgid "Fast & Secure"
+msgstr ""
+
+#: inc/patterns/follow-subscribe.php:20
+msgid "Follow me on various social media platform"
+msgstr ""
+
+#: inc/patterns/follow-subscribe.php:8
+msgid "Follow Subscribe"
+msgstr ""
+
+#: inc/patterns/footer-basic.php:6
+msgid "Footer Basic"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:6
+msgid "Footer Mega"
+msgstr ""
+
+#: inc/patterns/team.php:32
+msgid "Foundational pillars of our organization"
+msgstr ""
+
+#: inc/patterns/team.php:62
+msgid "Founder &amp; CEO"
+msgstr ""
+
+#: inc/patterns/pricing.php:65
+msgid "Full Site Editing"
+msgstr ""
+
+#: inc/patterns/pricing.php:87 inc/patterns/pricing.php:155
+#: inc/patterns/pricing.php:213
+msgid "Get Started"
+msgstr ""
+
+#: inc/patterns/follow-subscribe.php:40
+msgid "Get the latest posts delivered right to your inbox"
+msgstr ""
+
+#: inc/patterns/header-basic.php:6
+msgid "Header Basic"
+msgstr ""
+
+#: inc/patterns/header-notification.php:6
+msgid "Header Notification with Button"
+msgstr ""
+
+#: inc/patterns/block-patterns.php:10
+msgid "Hero"
+msgstr ""
+
+#: inc/patterns/hero-classic.php:6
+msgid "Hero Classic"
+msgstr ""
+
+#: inc/patterns/services.php:77
+msgid "Hosting Provider"
+msgstr ""
+
+#: inc/patterns/hero-classic.php:37
+msgid "How it Works"
+msgstr ""
+
+#: inc/patterns/faq.php:46
+msgid "How many colors should I choose?"
+msgstr ""
+
+#. URI of the theme
+msgid "https://wpwheels.com/themes/wpwheels/"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:95
+msgid "Instagram"
+msgstr ""
+
+#: inc/patterns/team.php:107
+msgid "John Doe"
+msgstr ""
+
+#: inc/patterns/team.php:51
+msgid "Justin Hammer"
+msgstr ""
+
+#: inc/patterns/news.php:32
+msgid "Latest Blogs &amp; News"
+msgstr ""
+
+#: inc/patterns/news.php:6
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/patterns/cta-grid.php:39 inc/patterns/footer-mega.php:23
+#: inc/patterns/services.php:54 inc/patterns/services.php:70
+#: inc/patterns/services.php:86
+msgid "Learn More"
+msgstr ""
+
+#: inc/patterns/faq.php:24
+msgid "Let’s Build Something Together"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:103
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/patterns/team.php:79
+msgid "Lisa Ferrol"
+msgstr ""
+
+#: inc/patterns/faq.php:51 inc/patterns/faq.php:69 inc/patterns/faq.php:87
+#: inc/patterns/hero-classic.php:28 inc/patterns/services.php:49
+#: inc/patterns/services.php:65 inc/patterns/services.php:81
+#: inc/patterns/team.php:66 inc/patterns/team.php:94 inc/patterns/team.php:122
+#: inc/patterns/testimonials.php:50 inc/patterns/testimonials.php:78
+#: inc/patterns/testimonials.php:106
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula eget dolor. Aenean massa."
+msgstr ""
+
+#: inc/patterns/cta-basic.php:22 inc/patterns/cta-grid.php:34
+#: inc/patterns/faq.php:28 inc/patterns/footer-mega.php:18
+#: inc/patterns/news.php:36 inc/patterns/pricing.php:28
+#: inc/patterns/services.php:36 inc/patterns/team.php:36
+#: inc/patterns/testimonials.php:36
+msgid ""
+"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
+"ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
+"parturient montes, nascetur ridiculus mus."
+msgstr ""
+
+#: inc/tgm/tgm.php:26
+msgid "Mailchimp for WordPress"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:75
+msgid "Marketing"
+msgstr ""
+
+#: inc/patterns/pricing.php:191
+msgid "Monthly Maintenance Service"
+msgstr ""
+
+#: inc/patterns/pricing.php:101
+msgid "Most Popular"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:47
+msgid "Newsletter"
+msgstr ""
+
+#: inc/patterns/testimonials.php:88
+msgid "Nina Larson"
+msgstr ""
+
+#: functions.php:97
+msgid "No Disc"
+msgstr ""
+
+#: inc/patterns/pricing.php:133
+msgid "One Click Demo Import"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:14
+msgid "Our Company"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:39
+msgid "Our Mission"
+msgstr ""
+
+#: inc/patterns/pricing.php:19
+msgid "Our Offer"
+msgstr ""
+
+#: inc/patterns/services.php:20
+msgid "Our Services"
+msgstr ""
+
+#: inc/patterns/team.php:20
+msgid "Our Team"
+msgstr ""
+
+#: functions.php:100 functions.php:107
+msgid "Outline"
+msgstr ""
+
+#: inc/patterns/404-basic.php:10
+msgid "Page Not Found"
+msgstr ""
+
+#: inc/patterns/testimonials.php:116
+msgid "Paul Harrison"
+msgstr ""
+
+#: inc/patterns/hero-classic.php:24
+msgid "Perfect gifts for your loved ones!"
+msgstr ""
+
+#: inc/patterns/pricing.php:24
+msgid "Plans &amp; Pricing"
+msgstr ""
+
+#: inc/patterns/pricing.php:106
+msgid "Premium"
+msgstr ""
+
+#: inc/patterns/block-patterns.php:9
+msgid "Pricing"
+msgstr ""
+
+#: inc/patterns/pricing.php:6
+msgid "Pricing Table"
+msgstr ""
+
+#: inc/patterns/query.php:6
+msgid "Query Posts"
+msgstr ""
+
+#: inc/patterns/pricing.php:57
+msgid "Responsive Layouts"
+msgstr ""
+
+#: functions.php:86
+msgid "Reverse"
+msgstr ""
+
+#: inc/patterns/services.php:32
+msgid "Scale your business using our technology"
+msgstr ""
+
+#: inc/patterns/pricing.php:207
+msgid "SEO Included"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:58 inc/patterns/services.php:6
+msgid "Services"
+msgstr ""
+
+#: functions.php:89 functions.php:93 functions.php:103
+msgid "Shadow"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:79
+msgid "Social Media"
+msgstr ""
+
+#: functions.php:90 functions.php:94 functions.php:104
+msgid "Solid"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:35
+msgid "Start Here"
+msgstr ""
+
+#: inc/patterns/cta-basic.php:17
+msgid "Stay Connected"
+msgstr ""
+
+#: inc/patterns/follow-subscribe.php:16
+msgid "Stay connected"
+msgstr ""
+
+#: inc/patterns/testimonials.php:60
+msgid "Stella Hudson"
+msgstr ""
+
+#: inc/helpers.php:41 inc/patterns/follow-subscribe.php:36
+msgid "Subscribe"
+msgstr ""
+
+#: inc/patterns/cta-basic.php:28
+msgid "Subscribe Now"
+msgstr ""
+
+#: inc/patterns/pricing.php:149
+msgid "Support via Dedicated Email"
+msgstr ""
+
+#: inc/patterns/pricing.php:81
+msgid "Support via Public Forum"
+msgstr ""
+
+#: inc/patterns/team.php:6
+msgid "Team Members"
+msgstr ""
+
+#: inc/patterns/testimonials.php:6 inc/patterns/testimonials.php:20
+msgid "Testimonials"
+msgstr ""
+
+#: inc/patterns/cta-grid.php:30
+msgid "The future is changing and we are a part of it."
+msgstr ""
+
+#: inc/patterns/footer-mega.php:99
+msgid "Twitter"
+msgstr ""
+
+#: inc/patterns/404-basic.php:14
+msgid ""
+"Unfortunately, the page you are looking for no longer exists, or has been "
+"moved. Please try searching for your content below."
+msgstr ""
+
+#: inc/patterns/testimonials.php:64
+msgid "UX/UI"
+msgstr ""
+
+#: inc/patterns/news.php:26 inc/patterns/services.php:26
+#: inc/patterns/team.php:26 inc/patterns/testimonials.php:26
+msgid "VIEW ALL"
+msgstr ""
+
+#: inc/patterns/footer-mega.php:63
+msgid "Web Design"
+msgstr ""
+
+#: inc/patterns/team.php:90
+msgid "Web Designer"
+msgstr ""
+
+#: inc/patterns/pricing.php:199
+msgid "Website Security Hardening"
+msgstr ""
+
+#: inc/patterns/testimonials.php:32
+msgid "Why People Are Choosing Us?"
+msgstr ""
+
+#: inc/patterns/services.php:61
+msgid "WordPress"
+msgstr ""
+
+#. Name of the theme
+#: inc/patterns/block-patterns.php:7 inc/patterns/footer-basic.php:13
+#: inc/patterns/footer-mega.php:119
+msgid "WPWheels"
+msgstr ""
+
+#. Author of the theme
+msgid "wpwheels"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"WPWheels is a versatile and adaptable theme that is suitable for every kind "
+"of website. Whether for blogs, businesses, startups, law firms, or creative "
+"agencies, WPWheels is the ideal solution. It offers a wide range of "
+"templates and patterns with easy customization, and typography adjustments. "
+"It seamlessly supports full-siting editing without backward compatibility "
+"code. The minimalist and stylish designs simplify the site-building process. "
+"Similarly, WPWheels is a lightweight and speed-optimized theme. It features "
+"important patterns including a hero and portfolio section, a call-to-action "
+"button, testimonials, and many more. WPWheels provides quicker and more "
+"efficient site development for any website."
+msgstr ""

@@ -1,0 +1,10 @@
+== Changelog ==
+
+= 1.0.2 - 08 May 2024 =
+* Added dashboard notice for the required plugin
+
+= 1.0.1 - 03 May 2024 =
+* Deprecated customizer visibility from dashboard
+
+= 1.0.0 - 27 April 2024 =
+* Initial release

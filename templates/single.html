@@ -1,0 +1,89 @@
+<!-- wp:template-part {"slug":"header","theme":"wpwheels","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|large"}}},"className":"site-content"} -->
+<main class="wp-block-group site-content" style="margin-top:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--large)"><!-- wp:group {"style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group"><!-- wp:post-featured-image {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}},"border":{"width":"0px","style":"none","radius":"4px"}}} /-->
+	
+	<!-- wp:post-title {"level":1} /-->
+	
+	<!-- wp:group {"style":{"spacing":{"blockGap":"5px","margin":{"bottom":"30px"}},"typography":{"fontSize":"18px"}},"className":"post-meta","layout":{"type":"flex"}} -->
+	<div class="wp-block-group post-meta" style="margin-bottom:30px;font-size:18px"><!-- wp:paragraph -->
+	<p>By: </p>
+	<!-- /wp:paragraph -->
+	
+	<!-- wp:post-author-name {"isLink":true,"style":{"typography":{"textTransform":"capitalize"}}} /-->
+	
+	<!-- wp:separator {"style":{"layout":{"selfStretch":"fixed","flexSize":"15px"}}} -->
+	<hr class="wp-block-separator has-alpha-channel-opacity"/>
+	<!-- /wp:separator -->
+	
+	<!-- wp:post-terms {"term":"category","prefix":"In: "} /-->
+	
+	<!-- wp:separator {"style":{"layout":{"selfStretch":"fixed","flexSize":"15px"}}} -->
+	<hr class="wp-block-separator has-alpha-channel-opacity"/>
+	<!-- /wp:separator -->
+	
+	<!-- wp:paragraph {"style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+	<p>Published Date: </p>
+	<!-- /wp:paragraph -->
+	
+	<!-- wp:post-date /--></div>
+	<!-- /wp:group --></div>
+	<!-- /wp:group -->
+	
+	<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+	
+	<!-- wp:group {"style":{"spacing":{"blockGap":"0px"},"typography":{"fontSize":"18px"}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group" style="font-size:18px"><!-- wp:post-terms {"term":"post_tag","prefix":"Tags: ","suffix":" "} /--></div>
+	<!-- /wp:group -->
+	
+	<!-- wp:group {"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+	<div class="wp-block-group"><!-- wp:post-navigation-link {"type":"previous","showTitle":true} /-->
+	
+	<!-- wp:post-navigation-link {"showTitle":true} /--></div>
+	<!-- /wp:group --></div>
+	<!-- /wp:group -->
+	
+	<!-- wp:group {"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group"><!-- wp:comments {"className":"wp-block-comments-query-loop site-comments"} -->
+	<div class="wp-block-comments wp-block-comments-query-loop site-comments"><!-- wp:comments-title {"level":3} /-->
+	
+	<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"60px"}}}} -->
+	<div class="wp-block-group" style="margin-bottom:60px"><!-- wp:comment-template -->
+	<!-- wp:columns {"style":{"spacing":{"blockGap":"10px","margin":{"bottom":"30px"}}}} -->
+	<div class="wp-block-columns" style="margin-bottom:30px"><!-- wp:column {"width":"48px"} -->
+	<div class="wp-block-column" style="flex-basis:48px"><!-- wp:avatar {"size":48,"style":{"border":{"radius":"24px"}}} /--></div>
+	<!-- /wp:column -->
+	
+	<!-- wp:column {"style":{"spacing":{"blockGap":"10px"}}} -->
+	<div class="wp-block-column"><!-- wp:comment-author-name /-->
+	
+	<!-- wp:group {"style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"blockGap":"10px"}},"layout":{"type":"flex"}} -->
+	<div class="wp-block-group" style="margin-top:0px;margin-bottom:0px"><!-- wp:comment-date /-->
+	
+	<!-- wp:comment-edit-link /--></div>
+	<!-- /wp:group -->
+	
+	<!-- wp:comment-content /-->
+	
+	<!-- wp:comment-reply-link /--></div>
+	<!-- /wp:column --></div>
+	<!-- /wp:columns -->
+	<!-- /wp:comment-template --></div>
+	<!-- /wp:group -->
+	
+	<!-- wp:comments-pagination -->
+	<!-- wp:comments-pagination-previous /-->
+	
+	<!-- wp:comments-pagination-numbers /-->
+	
+	<!-- wp:comments-pagination-next /-->
+	<!-- /wp:comments-pagination -->
+	
+	<!-- wp:post-comments-form /--></div>
+	<!-- /wp:comments --></div>
+	<!-- /wp:group --></main>
+	<!-- /wp:group -->
+	
+	<!-- wp:template-part {"slug":"footer","theme":"wpwheels","tagName":"footer","className":"site-footer"} /-->
