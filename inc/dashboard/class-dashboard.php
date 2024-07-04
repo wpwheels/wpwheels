@@ -268,60 +268,64 @@ if ( ! class_exists( 'WPWheels_Dashboard' ) ) {
 				return;
 			}
 			?>
-		
-			<div class="notice notice-blockwheels-plugin">
-				<div class="notice-blockwheels-plugin-root">
-					<div class="blockwheels-plugin-inner">
-						<button type="button" class="notice-dismiss">
-							<span class="screen-reader-text">
-								<?php esc_html_e( 'Dismiss this notice.', 'wpwheels' ); ?>
-							</span>
-						</button>
-						<div class="wpwheels-notification-content">
-							<div class="content-text-column">
-								<div class="intro__thanks">
-									<?php
+
+<div class="notice notice-blockwheels-plugin">
+    <div class="notice-blockwheels-plugin-root">
+        <div class="blockwheels-plugin-inner">
+            <button type="button" class="notice-dismiss">
+                <span class="screen-reader-text">
+                    <?php esc_html_e( 'Dismiss this notice.', 'wpwheels' ); ?>
+                </span>
+            </button>
+            <div class="wpwheels-notification-content">
+                <div class="content-text-column">
+                    <div class="intro__thanks">
+                        <?php
 										printf(
 											/* translators: %s: Theme Name. */
 											esc_html__( 'Thank you for selecting the %s Theme!', 'wpwheels' ),
 											$this->theme_name
 										);
 									?>
-									<h2><?php esc_html_e( 'Create Your Ideal Site with FSE Blocks!', 'wpwheels' ); ?></h2>
-								</div>
-								<div class="intro__desc">
-									<?php
+                        <h2><?php esc_html_e( 'Create Your Ideal Site with FSE Blocks!', 'wpwheels' ); ?></h2>
+                    </div>
+                    <div class="intro__desc">
+                        <?php
 									printf(
 										/* translators: %s: Theme Name. */
 										__( '%1$s is now installed and ready for use. We highly recommend installing and activating the <b>BlockWheels</b> Plugin to unlock freemium website templates/demos, 20+ advanced Gutenberg Blocks, and patterns, facilitating the creation of stunning websites with utmost ease.', 'wpwheels' ),
 										$this->theme_name,
 									);
 									?>
-								</div>
-							</div>
-							<div class="content-image-column">
-								<div class="intro_info">
-									<img class="notice-banner" src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-arrow.png'); ?>" alt="Arrow">
-									<div class="info__boxes">
-										<div class="info__box green-bg">
-											<span>16+</span>
-											<?php esc_html_e('Blocks','wpwheels');?>
-										</div>
-										<div class="info__box pink-bg">
-											<span>24+</span>
-											<?php esc_html_e('Patterns','wpwheels');?>
-										</div>
-									</div>
-								</div>
-								<div class="intro__banner">
-									<img class="notice-banner" src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-banner.png'); ?>" alt="BlockWheels">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<?php
+                    </div>
+                </div>
+                <div class="content-image-column">
+                    <div class="intro_info">
+                        <img class="notice-banner"
+                            src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-arrow.png'); ?>"
+                            alt="Arrow">
+                        <div class="info__boxes">
+                            <div class="info__box green-bg">
+                                <span>16+</span>
+                                <?php esc_html_e('Blocks','wpwheels');?>
+                            </div>
+                            <div class="info__box pink-bg">
+                                <span>24+</span>
+                                <?php esc_html_e('Patterns','wpwheels');?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__banner">
+                        <img class="notice-banner"
+                            src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-banner.png'); ?>"
+                            alt="BlockWheels">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php
 		}
 
 		/**
@@ -345,9 +349,9 @@ if ( ! class_exists( 'WPWheels_Dashboard' ) ) {
 
 			wp_enqueue_script(
 				'wpwheels-notice-js',
-				get_theme_file_uri( '/assets/js/notice.js' ),
+				get_theme_file_uri( 'build/admin/index.js' ),
 				['jquery'],
-				filemtime( get_theme_file_path( '/assets/js/notice.js' ) ),
+				filemtime( get_theme_file_path( 'build/admin/index.js' ) ),
 				true
 			);
 			wp_localize_script(
@@ -361,9 +365,9 @@ if ( ! class_exists( 'WPWheels_Dashboard' ) ) {
 
 			wp_enqueue_style(
 				'wpwheels-notice-css',
-				get_theme_file_uri( '/assets/css/notice.css' ),
+				get_theme_file_uri( '/build/admin/index.css' ),
 				array(),
-				filemtime( get_theme_file_path( '/assets/css/notice.css' ) )
+				filemtime( get_theme_file_path( '/build/admin/index.css' ) )
 			);
 		}
 

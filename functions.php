@@ -49,7 +49,7 @@ if ( ! function_exists( 'wpwheels_setup' ) ) {
 		add_theme_support( 'editor-styles' );
 		add_editor_style(
 			array(
-				'./assets/css/developer.css',
+				'.build/public/index.css',
 			)
 		);
 
@@ -83,9 +83,9 @@ if ( ! function_exists( 'wpwheels_enqueue_style_sheet' ) ) {
 		// Enqueue theme stylesheet.
 		wp_enqueue_style(
 			'wpwheels-developer-style',
-			get_theme_file_uri( '/assets/css/developer.css' ),
+			get_theme_file_uri( 'build/public/index.css' ),
 			array(),
-			filemtime( get_theme_file_path( '/assets/css/developer.css' ) )
+			filemtime( get_theme_file_path( 'build/public/index.css' ) )
 		);
 	}
 }
