@@ -101,12 +101,16 @@ if ( ! class_exists( 'WPWheels_Dashboard' ) ) {
 		}
 
 		public function get_wpwheels_extra_status() {
-			
-			$free_status = $this->get_plugin_status( 'blockwheels' );
 
 			return array(
-				'slug'   => 'blockwheels',
-				'status' => $free_status,
+				'one-click-demo-import'	=> array(
+					'slug'   => 'one-click-demo-import',
+					'status' => $this->get_plugin_status( 'one-click-demo-import' )
+				),
+				'blockwheels'	=> array(
+					'slug'   => 'blockwheels',
+					'status' => $this->get_plugin_status( 'blockwheels' )
+				),
 			);
 		}
 
@@ -261,10 +265,10 @@ if ( ! class_exists( 'WPWheels_Dashboard' ) ) {
 			if ( get_option( 'dismissed-wpwheels_plugin_notice', false ) ) {
 				return;
 			}
+			
+			$status = array_unique(wp_list_pluck( $this->get_wpwheels_extra_status(), 'status' ));
 
-			$status  = $this->get_wpwheels_extra_status()['status'];
-		
-			if ( $status === 'active' ) {
+			if ( count( $status ) == 1 && in_array( 'active', $status ) ) {
 				return;
 			}
 			?>
@@ -340,13 +344,13 @@ if ( ! class_exists( 'WPWheels_Dashboard' ) ) {
 			if ( get_option( 'dismissed-wpwheels_plugin_notice', false ) ) {
 				return;
 			}
-		
-			$status  = $this->get_wpwheels_extra_status()['status'];
-		
-			if ( $status === 'active' ) {
+
+			$status = array_unique(wp_list_pluck( $this->get_wpwheels_extra_status(), 'status' ));
+			
+			if ( count( $status ) == 1 && in_array( 'active', $status ) ) {
 				return;
 			}
-
+		
 			wp_enqueue_script(
 				'wpwheels-notice-js',
 				get_theme_file_uri( 'build/admin/index.js' ),
@@ -385,17 +389,18 @@ if ( ! class_exists( 'WPWheels_Dashboard' ) ) {
 		 *
 		 */
 		public function check_notice() {
-			$status       = $this->get_wpwheels_extra_status();
+
 			$actions_html = '';
-			if ( $status['status'] == 'installed' ) {
-				$actions_html = '<div class="notice-actions">
-			<button type="button" class="button button-primary" data-action="activate">' . __( 'Activate BlockWheels', 'wpwheels' ) . '</button>
-			</div>';
-			} elseif ( $status['status'] == 'uninstalled' ) {
-				$actions_html = '<div class="notice-actions">
-			<button type="button" class="button button-primary" data-action="install_activate">' . __( 'Install & Activate BlockWheels', 'wpwheels' ) . '</button>
-			</div>';
+
+			$status = array_unique(wp_list_pluck( $this->get_wpwheels_extra_status(), 'status' ));
+
+			if ( count( $status ) == 1 && in_array( 'installed', $status ) ) {
+				$actions_html = '<div class="notice-actions"><button type="button" class="button button-primary" data-action="activate">' . __( 'Activate', 'wpwheels' ) . '</button></div>';
 			}
+			else {
+				$actions_html = '<div class="notice-actions"><button type="button" class="button button-primary" data-action="install_activate">' . __( 'Install & Activate', 'wpwheels' ) . '</button></div>';
+			}
+			
 			wp_send_json_success(
 				$actions_html
 			);
@@ -410,40 +415,25 @@ if ( ! class_exists( 'WPWheels_Dashboard' ) ) {
 				return;
 			}
 
-			$status  = $this->get_wpwheels_extra_status();
-	
-			if ( $status['status'] === 'active' ) {
-				wp_send_json_success(
-					array(
-						'status'    => 'active',
-						'pluginUrl' => esc_url( $this->redirect_url ),
-					)
-				);
+			$status = array_unique(wp_list_pluck( $this->get_wpwheels_extra_status(), 'status' ));
+
+			foreach ($status as $key => $value) {
+				if ( $value === 'uninstalled' ) {
+					$this->download_and_install( $this->get_wpwheels_extra_status()[ $key ]['slug'] );
+                    $this->plugin_activation( $this->get_wpwheels_extra_status()[ $key ]['slug'] );
+                }
+				elseif ( $value === 'installed' ) {
+                    $this->plugin_activation( $this->get_wpwheels_extra_status()[ $key ]['slug'] );
+                }
 			}
-	
-			if ( $status['status'] === 'uninstalled' ) {
-				$this->download_and_install( $status['slug'] );
-				$this->plugin_activation( $status['slug'] );
-	
-				wp_send_json_success(
-					array(
-						'status'    => 'active',
-						'pluginUrl' => esc_url( $this->redirect_url ),
-					)
-				);
-			}
-	
-			if ( $status['status'] === 'installed' ) {
-				$this->plugin_activation( $status['slug'] );
-	
-				wp_send_json_success(
-					array(
-						'status'    => 'active',
-						'pluginUrl' => esc_url( $this->redirect_url ),
-					)
-				);
-			}
-	
+
+			wp_send_json_success(
+				array(
+					'status'    => 'active',
+					'pluginUrl' => esc_url( $this->redirect_url ),
+				)
+			);
+
 			wp_die();
 		}
 	}
