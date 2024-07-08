@@ -342,64 +342,71 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 			$btn_data = $this->starter_template_button();
 			?>
 <div id="wpwheels-welcome-notice" class="wpwheels-dashboard-wrapper notice wpwheels-notice is-dismissible">
+    <img class="notice-top-corner"
+        src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-top-corner.png'); ?>"
+        alt="Notice Top Corner">
+    <img class="notice-bottom-corner"
+        src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-bottom-corner.png'); ?>"
+        alt="Notice Bottom Corner">
+
     <div class="wpwheels-notice-wrapper">
         <div class="wpwheels-notice-intro">
-            <div class="intro__hello">
-                <?php esc_html_e( '🤝🏻', 'wpwheels' ); ?>
-                <?php esc_html_e( 'Welcome, ', 'wpwheels' ); ?>
-                <?php echo esc_html( ucfirst( $user->display_name ) ); ?>
-            </div>
             <div class="intro__thanks">
                 <?php
-								printf(
-									/* translators: %s: Theme Name. */
-									esc_html__( 'Thank you for using %s', 'wpwheels' ),
-									$this->theme_name
-								);
-							?>
-                <sup><?php echo esc_html( $this->theme_version ); ?></sup>
+					printf(
+						/* translators: %s: Theme Name. */
+						esc_html__( 'Thank you for selecting the %s Theme!', 'wpwheels' ),
+						$this->theme_name
+					);
+				?>
+                <h2><?php esc_html_e( 'Create Your Ideal Site with FSE Blocks!', 'wpwheels' ); ?></h2>
             </div>
             <div class="intro__desc">
                 <?php
-							printf(
-								/* translators: %s: Theme Name. */
-								esc_html__( '%s is now installed and ready for use. Next, you can speed up your development process by using amazing starter templates or visit the theme dashboard for more information and settings.', 'wpwheels' ),
-								$this->theme_name
-							);
-							?>
+					printf(
+						/* translators: %s: Theme Name. */
+						__( '%1$s is now installed and ready for use. We highly recommend installing and activating the <b>BlockWheels</b> Plugin to unlock freemium website templates/demos, 20+ advanced Gutenberg Blocks, and patterns, facilitating the creation of stunning websites with utmost ease.', 'wpwheels' ),
+						$this->theme_name,
+					);
+				?>
+            </div>
+            <div class="wpwheels-notice-message">
+                <div class="wpwheels-notice-template-import">
+                    <?php if ( $btn_data['plugins_active'] ) : ?>
+                    <p><a href="<?php echo esc_url( $this->redirect_template_url ); ?>"
+                            class="button button-primary"><?php esc_html_e( 'Get Started', 'wpwheels' ); ?></a></p>
+                    <?php else : ?>
+                    <div class="starter-template-action">
+                        <div class="starter-template-plugins-info">
+                            <?php echo $btn_data['btn_html']; ?>
+                        </div>
+                        <p><a href="<?php echo esc_url( $this->redirect_template_url ); ?>"
+                                class="button button-primary"><?php esc_html_e( 'Install & Activate', 'wpwheels' ); ?></a>
+                        </p>
+                    </div>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
-        <div class="wpwheels-notice-message">
-            <div class="wpwheels-notice-image">
-                <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/screenshot.png' ); ?>"
-                    alt="<?php esc_attr_e( 'Wpwheels Screenshot', 'wpwheels' ); ?>">
-            </div>
-            <div class="wpwheels-notice-template-import">
-                <h3><?php esc_html_e( 'Starter Templates', 'wpwheels' ); ?></h3>
-                <?php if ( $btn_data['plugins_active'] ) : ?>
-                <p><?php esc_html_e( 'Make use of awesome starter website templates & get your site up & ready in no time.', 'wpwheels' ); ?>
-                </p>
-                <p><a href="<?php echo esc_url( $this->redirect_template_url ); ?>"
-                        class="button button-primary"><?php esc_html_e( 'Get Started', 'wpwheels' ); ?></a></p>
-                <?php else : ?>
-                <p><?php esc_html_e( 'Install and activate One Click Demo Import & UnfoldWP Import Companion plugin to import starter templates.', 'wpwheels' ); ?>
-                </p>
-                <div class="starter-template-action">
-                    <div class="starter-template-plugins-info">
-                        <?php echo $btn_data['btn_html']; ?>
+        <div class="wpwheels-notice-image">
+            <div class="intro_info">
+                <img class="notice-banner"
+                    src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-arrow.png'); ?>" alt="Arrow">
+                <div class="info__boxes">
+                    <div class="info__box green-bg">
+                        <span>16+</span>
+                        <?php esc_html_e('Blocks','wpwheels');?>
                     </div>
-                    <p><a href="<?php echo esc_url( $this->redirect_template_url ); ?>"
-                            class="button button-primary"><?php esc_html_e( 'Install & Activate', 'wpwheels' ); ?></a>
-                    </p>
+                    <div class="info__box pink-bg">
+                        <span>24+</span>
+                        <?php esc_html_e('Patterns','wpwheels');?>
+                    </div>
                 </div>
-                <?php endif; ?>
             </div>
-            <div class="wpwheels-notice-theme-dashboard">
-                <h3><?php esc_html_e( 'Dashboard', 'wpwheels' ); ?></h3>
-                <p><?php esc_html_e( 'To fully take advantage of the best our theme can offer, please make sure to visit the theme dashboard page.', 'wpwheels' ); ?>
-                </p>
-                <p><a href="<?php echo esc_url( admin_url( 'themes.php?page=' . $this->page_slug ) ); ?>"
-                        class="button button-secondary"><?php esc_html_e( 'Theme Dashboard', 'wpwheels' ); ?></a></p>
+            <div class="intro__banner">
+                <img class="notice-banner"
+                    src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-banner.png'); ?>"
+                    alt="BlockWheels">
             </div>
         </div>
     </div>
@@ -696,14 +703,16 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 			) ) {
 				return;
 			}
-			
-			$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
-			wp_enqueue_style( 'wpwheels-dashboard-style', get_template_directory_uri() . '/inc/dashboard/css/style' . $min . '.css', array(), $this->theme_version );
-			wp_enqueue_script( 'wpwheels-dashboard-script', get_template_directory_uri() . '/inc/dashboard/js/build.js', array( 'jquery' ), $this->theme_version, true );
-
+			wp_enqueue_script(
+				'wpwheels-dashboard-js',
+				get_theme_file_uri( 'build/admin/index.js' ),
+				['jquery'],
+				filemtime( get_theme_file_path( 'build/admin/index.js' ) ),
+				true
+			);
 			wp_localize_script(
-				'wpwheels-dashboard-script',
+				'wpwheels-dashboard-js',
 				'wpwheelsDashboard',
 				array(
 					'notice_dismiss_nonce'   => wp_create_nonce( 'wpwheels-dismiss-nonce' ),
@@ -715,6 +724,13 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 					'plugin_activated_text'  => __( 'Activated', 'wpwheels' ),
 					'plugin_activate_text'   => __( 'Activate', 'wpwheels' ),
 				)
+			);
+
+			wp_enqueue_style(
+				'wpwheels-dashboard-css',
+				get_theme_file_uri( '/build/admin/index.css' ),
+				array(),
+				filemtime( get_theme_file_path( '/build/admin/index.css' ) )
 			);
 		}
 
