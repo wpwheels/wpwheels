@@ -22,6 +22,9 @@
     },
 
     render_actions: function () {
+      alert("test");
+
+      return;
       $.ajax({
         type: "post",
         url: ajaxurl,

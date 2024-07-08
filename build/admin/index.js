@@ -21,6 +21,8 @@
       }
     },
     render_actions: function render_actions() {
+      alert("test");
+      return;
       $.ajax({
         type: "post",
         url: ajaxurl,
