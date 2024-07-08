@@ -241,10 +241,6 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 
 				// Create admin notices.
 				add_action( 'admin_notices', array( $this, 'display_admin_notice' ), 99 );
-
-				// Create a settings page.
-				add_action( 'admin_menu', array( $this, 'add_menu' ) );
-				add_action( 'admin_bar_menu', array( $this, 'add_bar_menu' ), 999 );
 			}
 
 			add_action( 'admin_init', array( $this, 'init_reminder' ) );
@@ -353,22 +349,22 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
         <div class="wpwheels-notice-intro">
             <div class="intro__thanks">
                 <?php
-					printf(
-						/* translators: %s: Theme Name. */
-						esc_html__( 'Thank you for selecting the %s Theme!', 'wpwheels' ),
-						$this->theme_name
-					);
-				?>
+								printf(
+									/* translators: %s: Theme Name. */
+									esc_html__( 'Thank you for selecting the %s Theme!', 'wpwheels' ),
+									$this->theme_name
+								);
+							?>
                 <h2><?php esc_html_e( 'Create Your Ideal Site with FSE Blocks!', 'wpwheels' ); ?></h2>
             </div>
             <div class="intro__desc">
                 <?php
-					printf(
-						/* translators: %s: Theme Name. */
-						__( '%1$s is now installed and ready for use. We highly recommend installing and activating the <b>BlockWheels</b> Plugin to unlock freemium website templates/demos, 20+ advanced Gutenberg Blocks, and patterns, facilitating the creation of stunning websites with utmost ease.', 'wpwheels' ),
-						$this->theme_name,
-					);
-				?>
+								printf(
+									/* translators: %s: Theme Name. */
+									__( '%1$s is now installed and ready for use. We highly recommend installing and activating the <b>BlockWheels</b> Plugin to unlock freemium website templates/demos, 20+ advanced Gutenberg Blocks, and patterns, facilitating the creation of stunning websites with utmost ease.', 'wpwheels' ),
+									$this->theme_name,
+								);
+							?>
             </div>
             <div class="wpwheels-notice-message">
                 <div class="wpwheels-notice-template-import">
@@ -521,77 +517,6 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 				$dismissed[] = $notice;
 				update_option( 'wpwheels_dismissed_notices', array_unique( $dismissed ) );
 			}
-		}
-
-
-		/**
-		 * Add theme dashboard page.
-		 *
-		 * @since 1.0.0
-		 */
-		public function add_menu() {
-			add_theme_page(
-				__( 'Theme Dashboard', 'wpwheels' ),
-				__( 'Theme Dashboard', 'wpwheels' ),
-				'manage_options',
-				$this->page_slug,
-				array( $this, 'render_main_page' ),
-				1
-			);
-		}
-
-		/**
-		 * Add link in menu bar
-		 *
-		 * @since 1.0.0
-		 */
-		public function add_bar_menu() {
-
-			global $wp_admin_bar;
-			if ( ! is_super_admin() || ! is_admin_bar_showing() ) {
-				return;
-			}
-			$wp_admin_bar->add_menu(
-				array(
-					'parent' => 'site-name',
-					'id'     => $this->page_slug,
-					'title'  => esc_html__( 'Theme Dashboard', 'wpwheels' ),
-					'href'   => admin_url( "themes.php?page=$this->page_slug" ),
-				)
-			);
-		}
-
-		/**
-		 * Dashboard Page
-		 *
-		 * @since 1.0.0
-		 */
-		public function render_main_page() {
-			$tabs = $this->tab_sections;
-			?>
-<div class="wpwheels-dashboard-wrapper">
-    <?php require_once get_template_directory() . '/inc/dashboard/sections/header.php'; ?>
-    <?php
-				$section = ( isset( $_GET['section'] ) ) ? sanitize_text_field( wp_unslash( $_GET['section'] ) ) : '';
-				switch ( $section ) {
-					case 'recommended-plugins':
-						require get_template_directory() . '/inc/dashboard/sections/recommended-plugins.php';
-						break;
-
-					case 'starter-templates':
-						require get_template_directory() . '/inc/dashboard/sections/starter-templates.php';
-						break;
-
-					case 'free-vs-pro':
-						require get_template_directory() . '/inc/dashboard/sections/free-vs-pro.php';
-						break;
-
-					default:
-						require get_template_directory() . '/inc/dashboard/sections/getting-started.php';
-				}
-				?>
-</div>
-<?php
 		}
 
 		/**
