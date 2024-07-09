@@ -624,6 +624,7 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 					'index.php',
 					'themes.php',
 					'appearance_page_wpwheels-dashboard',
+					'appearance_page_wpwheels-demo-import'
 				)
 			) ) {
 				return;

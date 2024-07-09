@@ -308,11 +308,60 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ "./src/admin/index.css");
 /* harmony import */ var _notice__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./notice */ "./src/admin/notice.js");
 /* harmony import */ var _notice__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_notice__WEBPACK_IMPORTED_MODULE_1__);
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 // Styles
 
 
 // Scripts
 
+(function () {
+  "use strict";
+
+  window.wpwheels = {
+    addClass: function addClass(el, key) {
+      var item = el.getAttribute("data-categories");
+      // Convert the string to an array
+      var arr = item.split(",");
+      if (arr.indexOf(key) !== -1) {
+        el.classList.add("wpwheels-pro-template");
+      }
+    },
+    /**
+     * Initiate the script to toggle shop layout
+     */
+    initAll: function initAll() {
+      var element = document.querySelectorAll(".ocdi__gl-item-container .ocdi__gl-item");
+      if (!element || element.length === 0) {
+        return;
+      }
+      _toConsumableArray(element).forEach(function (el, key) {
+        window.wpwheels.addClass(el, "pro");
+      });
+      var anchors = document.querySelectorAll(".ocdi__gl-item-container .wpwheels-pro-template a.button-primary");
+      _toConsumableArray(anchors).forEach(function (el, key) {
+        el.textContent = "Upgrade Now";
+        el.setAttribute("href", "https://wpwheels.com/plugins/blockwheels-pro/");
+        el.setAttribute("target", "__blank");
+      });
+    },
+    // Initiate when the DOM loads.
+    init: function init() {
+      window.wpwheels.initAll();
+    }
+  };
+  if ("loading" === document.readyState) {
+    // The DOM has not yet been loaded.
+    document.addEventListener("DOMContentLoaded", window.wpwheels.init);
+  } else {
+    // The DOM has already been loaded.
+    window.wpwheels.init();
+  }
+})();
 }();
 /******/ })()
 ;
