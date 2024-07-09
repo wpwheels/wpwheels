@@ -7,18 +7,10 @@ import "./notice";
 (function () {
   "use strict";
   window.wpwheels = {
-    addClass: function (el, key) {
-      let item = el.getAttribute("data-categories");
-      // Convert the string to an array
-      let arr = item.split(",");
-      if (arr.indexOf(key) !== -1) {
-        el.classList.add("wpwheels-pro-template");
-      }
-    },
     /**
-     * Initiate the script to toggle shop layout
+     * Initiate the script to add class name.
      */
-    initAll: function () {
+    addClass: function () {
       let element = document.querySelectorAll(
         ".ocdi__gl-item-container .ocdi__gl-item"
       );
@@ -27,7 +19,12 @@ import "./notice";
       }
 
       [...element].forEach((el, key) => {
-        window.wpwheels.addClass(el, "pro");
+        let item = el.getAttribute("data-categories");
+        // Convert the string to an array
+        let arr = item.split(",");
+        if (arr.indexOf("pro") !== -1) {
+          el.classList.add("wpwheels-pro-template");
+        }
       });
 
       let anchors = document.querySelectorAll(
@@ -42,9 +39,26 @@ import "./notice";
         el.setAttribute("target", "__blank");
       });
     },
+    /**
+     * Initiate the script to modify anchor attributes.
+     */
+    anchorModify: function () {
+      let anchors = document.querySelectorAll(
+        ".ocdi__gl-item-container .wpwheels-pro-template a.button-primary"
+      );
+      [...anchors].forEach((el, key) => {
+        el.textContent = "Upgrade Now";
+        el.setAttribute(
+          "href",
+          "https://wpwheels.com/plugins/blockwheels-pro/"
+        );
+        el.setAttribute("target", "__blank");
+      });
+    },
     // Initiate when the DOM loads.
     init: function () {
-      window.wpwheels.initAll();
+      window.wpwheels.addClass();
+      window.wpwheels.anchorModify();
     },
   };
   if ("loading" === document.readyState) {

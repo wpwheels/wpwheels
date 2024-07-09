@@ -323,25 +323,33 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   "use strict";
 
   window.wpwheels = {
-    addClass: function addClass(el, key) {
-      var item = el.getAttribute("data-categories");
-      // Convert the string to an array
-      var arr = item.split(",");
-      if (arr.indexOf(key) !== -1) {
-        el.classList.add("wpwheels-pro-template");
-      }
-    },
     /**
-     * Initiate the script to toggle shop layout
+     * Initiate the script to add class name.
      */
-    initAll: function initAll() {
+    addClass: function addClass() {
       var element = document.querySelectorAll(".ocdi__gl-item-container .ocdi__gl-item");
       if (!element || element.length === 0) {
         return;
       }
       _toConsumableArray(element).forEach(function (el, key) {
-        window.wpwheels.addClass(el, "pro");
+        var item = el.getAttribute("data-categories");
+        // Convert the string to an array
+        var arr = item.split(",");
+        if (arr.indexOf("pro") !== -1) {
+          el.classList.add("wpwheels-pro-template");
+        }
       });
+      var anchors = document.querySelectorAll(".ocdi__gl-item-container .wpwheels-pro-template a.button-primary");
+      _toConsumableArray(anchors).forEach(function (el, key) {
+        el.textContent = "Upgrade Now";
+        el.setAttribute("href", "https://wpwheels.com/plugins/blockwheels-pro/");
+        el.setAttribute("target", "__blank");
+      });
+    },
+    /**
+     * Initiate the script to modify anchor attributes.
+     */
+    anchorModify: function anchorModify() {
       var anchors = document.querySelectorAll(".ocdi__gl-item-container .wpwheels-pro-template a.button-primary");
       _toConsumableArray(anchors).forEach(function (el, key) {
         el.textContent = "Upgrade Now";
@@ -351,7 +359,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     },
     // Initiate when the DOM loads.
     init: function init() {
-      window.wpwheels.initAll();
+      window.wpwheels.addClass();
+      window.wpwheels.anchorModify();
     }
   };
   if ("loading" === document.readyState) {
