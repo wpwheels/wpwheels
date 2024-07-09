@@ -623,8 +623,7 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 				array(
 					'index.php',
 					'themes.php',
-					'appearance_page_wpwheels-dashboard',
-					'appearance_page_wpwheels-demo-import'
+					'blockwheels_page_blockwheels-demo-import'
 				)
 			) ) {
 				return;
