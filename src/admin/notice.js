@@ -61,28 +61,6 @@
       }
     }
 
-    // Plugin activation and installation from dashboard
-    let $dashboardPlugins = $(".wpwheels-recommended-plugins .plugin-action a");
-    if ($dashboardPlugins) {
-      $dashboardPlugins.on("click", function (event) {
-        event.preventDefault();
-        let $this = $(this),
-          actionType = $this.data("action");
-
-        if (actionType) {
-          if (actionType === "wpwheels_activate_plugin") {
-            if ($this.hasClass("activating") || $this.hasClass("activated"))
-              return;
-            activatePlugin($this);
-          } else if (actionType === "wpwheels_install_plugin") {
-            if ($this.hasClass("installing") || $this.hasClass("installed"))
-              return;
-            installPlugin($this);
-          }
-        }
-      });
-    }
-
     function activatePlugin($element, $targetElement = "") {
       if (!$targetElement) $targetElement = $element;
       $targetElement.addClass("activating");

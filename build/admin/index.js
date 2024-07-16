@@ -118,25 +118,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _processPlugins.apply(this, arguments);
       }
     }
-
-    // Plugin activation and installation from dashboard
-    var $dashboardPlugins = $(".wpwheels-recommended-plugins .plugin-action a");
-    if ($dashboardPlugins) {
-      $dashboardPlugins.on("click", function (event) {
-        event.preventDefault();
-        var $this = $(this),
-          actionType = $this.data("action");
-        if (actionType) {
-          if (actionType === "wpwheels_activate_plugin") {
-            if ($this.hasClass("activating") || $this.hasClass("activated")) return;
-            activatePlugin($this);
-          } else if (actionType === "wpwheels_install_plugin") {
-            if ($this.hasClass("installing") || $this.hasClass("installed")) return;
-            installPlugin($this);
-          }
-        }
-      });
-    }
     function activatePlugin($element) {
       var $targetElement = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
       if (!$targetElement) $targetElement = $element;
