@@ -107,15 +107,6 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 		private $tab_sections = array();
 
 		/**
-		 * Recommended Plugins
-		 *
-		 * @access private
-		 * @var array $recommended_plugins
-		 * @since 1.0.0
-		 */
-		private $recommended_plugins = array();
-
-		/**
 		 * Plugins for Starter Templates
 		 *
 		 * @access private
@@ -123,33 +114,6 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 		 * @since 1.0.0
 		 */
 		private $starter_template_plugins = array();
-
-		/**
-		 * Theme Url
-		 *
-		 * @access private
-		 * @var string $theme_url
-		 * @since 1.0.0
-		 */
-		private $theme_url = 'https://unfoldwp.com/products/wpwheels/';
-
-		/**
-		 * Documentation Url
-		 *
-		 * @access private
-		 * @var string $doc_url
-		 * @since 1.0.0
-		 */
-		private $doc_url = 'https://docs.unfoldwp.com/docs/wpwheels/';
-
-		/**
-		 * Support Url
-		 *
-		 * @access private
-		 * @var string $support_url
-		 * @since 1.0.0
-		 */
-		private $support_url = 'https://unfoldwp.com/contact-us/';
 
 		/**
 		 * Constructor.
@@ -199,35 +163,12 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 				),
 				array(
 					'name'   => __( 'Blockwheels', 'wpwheels' ),
-					'desc'   => __( 'Awesome starter templates for themes made by UnfoldWP.', 'wpwheels' ),
+					'desc'   => __( 'Awesome starter templates for themes made by WPWheels.', 'wpwheels' ),
 					'slug'   => 'blockwheels',
 					'path'   => 'blockwheels/blockwheels.php',
 					'status' => self::get_plugin_status( 'blockwheels/blockwheels.php' ),
 					'icon'   => 'https://ps.w.org/blockwheels/assets/icon-256x256.png',
 				),
-			);
-
-			// And any extra list of Recommended Plugins.
-			$this->recommended_plugins = array_merge(
-				$this->starter_template_plugins,
-				array(
-					array(
-						'name'   => __( 'MailChimp for WordPress', 'wpwheels' ),
-						'desc'   => __( 'Adds various highly effective sign-up methods to your site.', 'wpwheels' ),
-						'slug'   => 'mailchimp-for-wp',
-						'path'   => 'mailchimp-for-wp/mailchimp-for-wp.php',
-						'status' => self::get_plugin_status( 'mailchimp-for-wp/mailchimp-for-wp.php' ),
-						'icon'   => 'https://ps.w.org/mailchimp-for-wp/assets/icon-256x256.png',
-					),
-					array(
-						'name'   => __( 'Social Feed Gallery', 'wpwheels' ),
-						'desc'   => __( 'User-friendly Instagram plugin for displaying your Instagram feed on your site.', 'wpwheels' ),
-						'slug'   => 'insta-gallery',
-						'path'   => 'insta-gallery/insta-gallery.php',
-						'status' => self::get_plugin_status( 'insta-gallery/insta-gallery.php' ),
-						'icon'   => 'https://ps.w.org/insta-gallery/assets/icon-256x256.jpg',
-					),
-				)
 			);
 
 			$this->errors = array(
