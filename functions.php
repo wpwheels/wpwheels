@@ -8,26 +8,6 @@
  * @since 1.0.0
  */
 
- // Core Constants.
-define( 'OCEANWP_THEME_DIR', get_template_directory() );
-define( 'OCEANWP_THEME_URI', get_template_directory_uri() );
-
-
-// Theme version.
-define( 'OCEANWP_THEME_VERSION', '1.0.1' );
-
-// Javascript and CSS Paths.
-define( 'OCEANWP_JS_DIR_URI', OCEANWP_THEME_URI . '/assets/js/' );
-define( 'OCEANWP_CSS_DIR_URI', OCEANWP_THEME_URI . '/assets/css/' );
-
-// Include Paths.
-define( 'OCEANWP_INC_DIR', OCEANWP_THEME_DIR . '/inc/' );
-define( 'OCEANWP_INC_DIR_URI', OCEANWP_THEME_URI . '/inc/' );
-
-// Check if plugins are active.
-define( 'OCEAN_EXTRA_ACTIVE', class_exists( 'Ocean_Extra' ) );
-
-
 /**
  * Add theme support for block styles and editor style.
  *
