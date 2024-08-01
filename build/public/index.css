@@ -153,22 +153,58 @@ textarea {
 
 /* Button
 --------------------------------------------- */
-.wp-block-button .wp-block-button__link {
-  -webkit-transition: -webkit-transform ease 0.2s, -webkit-box-shadow ease 0.2s;
-  transition: -webkit-transform ease 0.2s, -webkit-box-shadow ease 0.2s;
-  transition: transform ease 0.2s, box-shadow ease 0.2s;
-  transition: transform ease 0.2s, box-shadow ease 0.2s, -webkit-transform ease 0.2s, -webkit-box-shadow ease 0.2s;
+.wp-block-button .wp-block-button__link,
+.wpcf7 .wpcf7-submit {
+  -webkit-transition:
+    -webkit-transform ease 0.2s,
+    -webkit-box-shadow ease 0.2s;
+  transition:
+    -webkit-transform ease 0.2s,
+    -webkit-box-shadow ease 0.2s;
+  transition:
+    transform ease 0.2s,
+    box-shadow ease 0.2s;
+  transition:
+    transform ease 0.2s,
+    box-shadow ease 0.2s,
+    -webkit-transform ease 0.2s,
+    -webkit-box-shadow ease 0.2s;
 }
-.wp-block-button.is-style-outline
-  > .wp-block-button__link:not(.has-text-color) {
+.wp-block-button.is-style-outline > .wp-block-button__link:not(.has-text-color),
+.wpcf7 .wpcf7-submit {
   color: var(--wp--preset--color--primary);
 }
-.wp-block-button .wp-block-button__link:hover {
+.wp-block-button .wp-block-button__link:hover,
+.wpcf7 .wpcf7-submit:hover {
   -webkit-transform: translate(0, -3px);
       -ms-transform: translate(0, -3px);
           transform: translate(0, -3px);
   -webkit-box-shadow: 0 20px 80px -10px var(--wp--preset--color--primary);
           box-shadow: 0 20px 80px -10px var(--wp--preset--color--primary);
+}
+.wpcf7 .wpcf7-submit {
+  width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--wp--preset--color--primary);
+  border-radius: 4px;
+  border-width: 0;
+  color: var(--wp--preset--color--base);
+  font-size: var(--wp--preset--font-size--x-small);
+  font-weight: var(--wp--custom--font-weight--regular);
+  line-height: inherit;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.wpcf7 p input,
+.wpcf7 p textarea {
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 /* Image
