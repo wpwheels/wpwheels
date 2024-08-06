@@ -37,7 +37,8 @@ function wpwheels_register_patterns() {
 		'follow-subscribe',
 		'footer-basic',
 		'footer-mega',
-		'404-basic'
+		'404-basic',
+		'sidebar-basic',
 	);
 
 	/**

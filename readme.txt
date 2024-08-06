@@ -81,6 +81,7 @@ license: https://creativecommons.org/publicdomain/zero/1.0/
 Source: https://pxhere.com/en/photo/1132443
         https://pxhere.com/en/photo/23390
 
+ad-banner.png
 placeholder.png
 notice-arrow.png
 notice-top-corner.png

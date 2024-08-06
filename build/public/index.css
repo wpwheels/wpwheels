@@ -281,9 +281,6 @@ hr.wp-block-separator.is-style-dots {
     transparent 6px
   ) !important;
 }
-hr.wp-block-separator {
-  border-width: 1px;
-}
 /* Quote
 --------------------------------------------- */
 .wp-block-quote.is-style-shadow-light {
