@@ -42,6 +42,9 @@ if ( ! function_exists( 'wpwheels_setup' ) ) {
 		// Responsive video
 		add_theme_support( 'responsive-embeds' );
 
+		// Custom Logo
+		add_theme_support( 'custom-logo' );
+
 	}
 }
 add_action( 'after_setup_theme', 'wpwheels_setup' );
