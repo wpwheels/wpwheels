@@ -289,6 +289,9 @@ header.site-header.wp-block-template-part {
   z-index: 9;
   position: relative;
 }
+.wpwheels-no-top-margin {
+  margin-top: 0 !important;
+}
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
