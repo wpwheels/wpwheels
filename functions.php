@@ -45,6 +45,12 @@ if ( ! function_exists( 'wpwheels_setup' ) ) {
 		// Custom Logo
 		add_theme_support( 'custom-logo' );
 
+		register_nav_menus(
+			array(
+				'primary' => esc_html__( 'Primary Menu', 'wpwheels' ),
+			)
+		);
+
 	}
 }
 add_action( 'after_setup_theme', 'wpwheels_setup' );
