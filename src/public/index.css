@@ -288,6 +288,10 @@ ul li a,
 .wp-block-query ul li.wp-block-post .wp-block-post-title > a {
   text-decoration: none;
 }
+header.site-header.wp-block-template-part {
+  z-index: 9;
+  position: relative;
+}
 
 /* Media Queries
 ---------------------------------------------------------------------------- */
