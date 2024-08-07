@@ -56,3 +56,19 @@ function wpwheels_register_patterns() {
 	}
 }
 add_action( 'init', 'wpwheels_register_patterns', 9 );
+
+/**
+ * Add a Sidebar template part area
+ */
+function wpwheels_template_part_areas( array $areas ) {
+	$areas[] = array(
+		'area'        => 'sidebar',
+		'area_tag'    => 'section',
+		'label'       => esc_html__( 'Sidebar', 'wpwheels' ),
+		'description' => esc_html__( 'The Sidebar template defines a page area that can be found on the Page (With Sidebar) template.', 'wpwheels' ),
+		'icon'        => 'sidebar',
+	);
+
+	return $areas;
+}
+add_filter( 'default_wp_template_part_areas', 'wpwheels_template_part_areas' );

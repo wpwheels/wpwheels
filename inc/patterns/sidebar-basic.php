@@ -4,12 +4,11 @@
  */
 return array(
 	'title'      => esc_html__( 'Sidebar Basic', 'wpwheels' ),
-	'categories' => array( 'wpwheels', 'sidebar' ),
-	'blockTypes' => array( 'core/template-part/general' ),
+	'categories' => array( 'wpwheels', 'layout' ),
 	'content'    => '
 	<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"0","right":"0","bottom":"0","left":"0"}}},"fontSize":"small","layout":{"type":"constrained","wideSize":"710px","contentSize":"710px","justifyContent":"left"}} -->
 	<div class="wp-block-group has-small-font-size" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|small","margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|large","right":"0","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"}},"border":{"radius":"5px"}},"backgroundColor":"tertiary","layout":{"type":"constrained","contentSize":"100%","justifyContent":"left"}} -->
-	<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="border-radius:5px;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:heading {"fontSize":"base"} -->
+	<div class="wp-block-group alignfull has-tertiary-background-color has-background" style="border-radius:5px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--large);padding-right:0;padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large)"><!-- wp:heading {"fontSize":"base"} -->
 	<h2 class="wp-block-heading has-base-font-size">'.esc_html__('Latest Post','wpwheels').'</h2>
 	<!-- /wp:heading -->
 
