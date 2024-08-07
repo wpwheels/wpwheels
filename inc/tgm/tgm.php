@@ -19,7 +19,7 @@ if ( ! function_exists( 'wpwheels_recommended_plugins' ) ) :
 		$plugins = array(
 			array(
 				'name'     => esc_html__( 'BlockWheels', 'wpwheels' ),
-				'slug'     => 'blockwheels',
+				'slug'     => wpwheels_is_pro_active() ? 'blockwheels-pro' : 'blockwheels',
 				'required' => false,
 			),
 			array(

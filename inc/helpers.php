@@ -73,3 +73,20 @@ if ( ! function_exists( 'wpwheels_get_mailchimp_forms' ) ) {
 		return $form;
 	}
 }
+
+/**
+ * Check pro plugin active ?
+ */
+if ( ! function_exists( 'wpwheels_is_pro_active' ) ) {
+	function wpwheels_is_pro_active() {
+		// Replace 'plugin-folder/plugin-file.php' with the actual path of the pro plugin
+		$pro_plugin = 'blockwheels-pro/blockwheels.php';
+
+		// Check if the plugin is active
+		if ( is_plugin_active( $pro_plugin ) ) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}

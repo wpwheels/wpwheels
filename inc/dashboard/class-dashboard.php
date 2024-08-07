@@ -98,15 +98,6 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 		private $errors = array();
 
 		/**
-		 * Tabs Array
-		 *
-		 * @access private
-		 * @var array $tab_sections
-		 * @since 1.0.0
-		 */
-		private $tab_sections = array();
-
-		/**
 		 * Plugins for Starter Templates
 		 *
 		 * @access private
@@ -143,14 +134,6 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 
 			$this->redirect_template_url = $template_link;
 
-			// Define Tabs Sections.
-			$this->tab_sections = array(
-				'getting-started'     => __( 'Getting Started', 'wpwheels' ),
-				'recommended-plugins' => __( 'Recommended Plugins', 'wpwheels' ),
-				'starter-templates'   => __( 'Starter Templates', 'wpwheels' ),
-				'free-vs-pro'         => __( 'Free vs Pro', 'wpwheels' ),
-			);
-
 			// List of Plugins used on starter setup.
 			$this->starter_template_plugins = array(
 				array(
@@ -161,15 +144,28 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 					'status' => self::get_plugin_status( 'one-click-demo-import/one-click-demo-import.php' ),
 					'icon'   => 'https://ps.w.org/one-click-demo-import/assets/icon-256x256.png',
 				),
-				array(
+			);
+
+			if ( wpwheels_is_pro_active() ) {
+				$this->starter_template_plugins[] = array(
+					'name'   => __( 'Blockwheels Pro', 'wpwheels' ),
+					'desc'   => __( 'Awesome starter templates for themes made by WPWheels.', 'wpwheels' ),
+					'slug'   => 'blockwheels-pro',
+					'path'   => 'blockwheels-pro/blockwheels.php',
+					'status' => self::get_plugin_status( 'blockwheels-pro/blockwheels.php' ),
+					'icon'   => 'https://ps.w.org/blockwheels/assets/icon-256x256.png',
+				);
+			}
+			else {
+				$this->starter_template_plugins[] = array(
 					'name'   => __( 'Blockwheels', 'wpwheels' ),
 					'desc'   => __( 'Awesome starter templates for themes made by WPWheels.', 'wpwheels' ),
 					'slug'   => 'blockwheels',
 					'path'   => 'blockwheels/blockwheels.php',
 					'status' => self::get_plugin_status( 'blockwheels/blockwheels.php' ),
 					'icon'   => 'https://ps.w.org/blockwheels/assets/icon-256x256.png',
-				),
-			);
+				);
+			}
 
 			$this->errors = array(
 				'permission' => __( 'Sorry, you do not have permission to perform this action.', 'wpwheels' ),
@@ -179,7 +175,6 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 			);
 
 			if ( current_user_can( 'manage_options' ) ) {
-
 				// Create admin notices.
 				add_action( 'admin_notices', array( $this, 'display_admin_notice' ), 99 );
 			}
@@ -266,7 +261,6 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 			if ( $this->can_display_notice() && ! $this->is_dismissed( 'review' ) && ! empty( $reminder_time ) && time() > $reminder_time ) {
 				$this->display_review_notice();
 			}
-
 		}
 
 		/**
@@ -362,14 +356,20 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 		public function display_review_notice() {
 			?>
 <div id="wpwheels-review-notice" class="notice wpwheels-notice is-dismissible">
+    <img class="notice-top-corner"
+        src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-top-corner.png'); ?>"
+        alt="Notice Top Corner">
+    <img class="notice-bottom-corner"
+        src="<?php echo esc_url(get_theme_file_uri() . '/assets/images/notice-bottom-corner.png'); ?>"
+        alt="Notice Bottom Corner">
     <div class="wpwheels-notice-wrapper">
         <div class="wpwheels-notice-message">
             <div class="wpwheels-notice-image">
                 <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/screenshot.png' ); ?>"
                     alt="<?php esc_attr_e( 'Wpwheels Screenshot', 'wpwheels' ); ?>">
             </div>
-            <div class="wpwheels-notice-review-content">
-                <div class="wpwheels-notice-intro">
+            <div class="wpwheels-notice-intro">
+                <div class="wpwheels-notice-review-content">
                     <div class="intro__thanks">
                         <?php
 									printf(

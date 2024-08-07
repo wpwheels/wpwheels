@@ -722,3 +722,14 @@ img.notice-bottom-corner {
   bottom: 13px;
   display: block;
 }
+#wpwheels-review-notice {
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+#wpwheels-review-notice .intro__thanks {
+  font-size: 20px;
+}
+#wpwheels-review-notice .wpwheels-notice-intro img.emoji {
+  height: 20px !important;
+  width: 20px !important;
+}

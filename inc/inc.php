@@ -23,7 +23,7 @@ require_once get_theme_file_path( '/inc/patterns/block-patterns.php' );
 
 // Admin only classes.
 if ( is_admin() ) {
-
+    
     // Recommend plugins.
     require_once get_theme_file_path( '/inc/dashboard/class-dashboard.php' );
 }
