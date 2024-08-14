@@ -27,6 +27,7 @@ if ( ! function_exists( 'wpwheels_setup' ) ) {
 
 		// Enqueue editor styles.
 		add_theme_support( 'editor-styles' );
+		
 		add_editor_style(
 			array(
 				'.build/public/index.css',
@@ -76,6 +77,8 @@ if ( ! function_exists( 'wpwheels_enqueue_style_sheet' ) ) {
 			array(),
 			filemtime( get_theme_file_path( 'build/public/index.css' ) )
 		);
+		// if the site is in RTL mode
+		wp_style_add_data( 'wpwheels-developer-style', 'rtl', 'replace' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'wpwheels_enqueue_style_sheet' );

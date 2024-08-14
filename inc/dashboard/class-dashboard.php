@@ -593,11 +593,13 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 			);
 
 			wp_enqueue_style(
-				'wpwheels-dashboard-css',
+				'wpwheels-dashboard-style',
 				get_theme_file_uri( '/build/admin/index.css' ),
 				array(),
 				filemtime( get_theme_file_path( '/build/admin/index.css' ) )
 			);
+			// RTL mode
+			wp_style_add_data( 'wpwheels-dashboard-style', 'rtl', 'replace' );
 		}
 
 		/**
