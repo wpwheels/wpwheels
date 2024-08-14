@@ -559,24 +559,32 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 		 */
 		public function enqueue_scripts( $hook ) {
 
-			if ( ! in_array(
-				$hook,
-				array(
-					'index.php',
-					'themes.php',
-					'blockwheels_page_blockwheels-demo-import'
-				)
-			) ) {
+			// Define the admin pages where scripts and styles should be enqueued.
+			$allowed_pages = array(
+				'index.php',
+				'themes.php',
+				'blockwheels_page_blockwheels-demo-import',
+			);
+
+			// Check if the current page is in the allowed pages array.
+			if ( ! in_array( $hook, $allowed_pages ) ) {
 				return;
 			}
 
+			// Define file paths for scripts and styles.
+			$js_file_path = 'build/admin/index.js';
+			$css_file_path = 'build/admin/index.css';
+
+			// Enqueue the JavaScript file with jQuery as a dependency and versioning based on file modification time.
 			wp_enqueue_script(
 				'wpwheels-dashboard-js',
-				get_theme_file_uri( 'build/admin/index.js' ),
-				['jquery'],
-				filemtime( get_theme_file_path( 'build/admin/index.js' ) ),
+				get_theme_file_uri( $js_file_path ),
+				array( 'jquery' ),
+				filemtime( get_theme_file_path( $js_file_path ) ),
 				true
 			);
+
+			// Localize script with necessary data.
 			wp_localize_script(
 				'wpwheels-dashboard-js',
 				'wpwheelsDashboard',
@@ -592,13 +600,15 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
 				)
 			);
 
+			// Enqueue the CSS file with versioning based on file modification time.
 			wp_enqueue_style(
 				'wpwheels-dashboard-style',
-				get_theme_file_uri( '/build/admin/index.css' ),
+				get_theme_file_uri( $css_file_path ),
 				array(),
-				filemtime( get_theme_file_path( '/build/admin/index.css' ) )
+				filemtime( get_theme_file_path( $css_file_path ) )
 			);
-			// RTL mode
+
+			// Enable automatic RTL support by looking for index-rtl.css.
 			wp_style_add_data( 'wpwheels-dashboard-style', 'rtl', 'replace' );
 		}
 

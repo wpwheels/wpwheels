@@ -27,12 +27,6 @@ if ( ! function_exists( 'wpwheels_setup' ) ) {
 
 		// Enqueue editor styles.
 		add_theme_support( 'editor-styles' );
-		
-		add_editor_style(
-			array(
-				'.build/public/index.css',
-			)
-		);
 
 		// HTML5
 		add_theme_support( 'html5', array( 'comment-form', 'comment-list' ) );
@@ -46,6 +40,7 @@ if ( ! function_exists( 'wpwheels_setup' ) ) {
 		// Custom Logo
 		add_theme_support( 'custom-logo' );
 
+		// Register menus
 		register_nav_menus(
 			array(
 				'primary' => esc_html__( 'Primary Menu', 'wpwheels' ),
@@ -61,27 +56,36 @@ add_action( 'after_setup_theme', 'wpwheels_setup' );
  */
 if ( ! function_exists( 'wpwheels_enqueue_style_sheet' ) ) {
 
-	/**
-	 * Enqueue styles.
-	 *
-	 * @since 1.0.0
-	 *
-	 * @return void
-	 */
-	function wpwheels_enqueue_style_sheet() {
+    /**
+     * Enqueue styles.
+     *
+     * @since 1.0.0
+     *
+     * @return void
+     */
+    function wpwheels_enqueue_style_sheet() {
 
-		// Enqueue theme stylesheet.
-		wp_enqueue_style(
-			'wpwheels-developer-style',
-			get_theme_file_uri( 'build/public/index.css' ),
-			array(),
-			filemtime( get_theme_file_path( 'build/public/index.css' ) )
-		);
-		// if the site is in RTL mode
-		wp_style_add_data( 'wpwheels-developer-style', 'rtl', 'replace' );
-	}
+        // Define the path to the main stylesheet.
+        $style_path = 'build/public/index.css';
+
+        // Enqueue theme stylesheet with versioning based on file modification time.
+        wp_enqueue_style(
+            'wpwheels-developer-style',
+            get_theme_file_uri( $style_path ),
+            array(),
+            filemtime( get_theme_file_path( $style_path ) )
+        );
+
+        // Enable automatic RTL support by looking for index-rtl.css.
+        wp_style_add_data( 'wpwheels-developer-style', 'rtl', 'replace' );
+    }
 }
+
+// Enqueue styles for the front-end.
 add_action( 'wp_enqueue_scripts', 'wpwheels_enqueue_style_sheet' );
+
+// Enqueue styles for the block editor.
+add_action( 'enqueue_block_editor_assets', 'wpwheels_enqueue_style_sheet' );
 
 /**
  * Register block styles.
