@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPWheels\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-15 05:30+0000\n"
+"POT-Creation-Date: 2024-08-14 04:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -13,8 +13,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Loco-Version: 2.6.11; wp-6.6.1\n"
 "X-Domain: wpwheels"
+
+#: inc/dashboard/class-dashboard.php:397
+msgid " Already rated"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:399
+msgid " Remind Later"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:395
+msgid " Sure Thing"
+msgstr ""
+
+#. %1$s is link start tag, %2$s is link end tag.
+#: inc/dashboard/class-dashboard.php:386
+#, php-format
+msgid ""
+" We hope you love it, and we would really appreciate it if you would "
+"%1$srate us%2$s and spread your positive words."
+msgstr ""
 
 #: inc/patterns/pricing.php:169
 msgid "$199"
@@ -26,6 +46,16 @@ msgstr ""
 
 #: inc/patterns/pricing.php:111
 msgid "$99"
+msgstr ""
+
+#. %s: Theme Name.
+#: inc/dashboard/class-dashboard.php:299
+#, php-format
+msgid ""
+"%1$s is now installed and ready for use. We highly recommend installing and "
+"activating the <b>BlockWheels</b> Plugin to unlock freemium website "
+"templates/demos, 20+ advanced Gutenberg Blocks, and patterns, facilitating "
+"the creation of stunning websites with utmost ease."
 msgstr ""
 
 #: inc/patterns/pricing.php:47 inc/patterns/pricing.php:115
@@ -45,8 +75,28 @@ msgstr ""
 msgid "Accessibility"
 msgstr ""
 
+#: inc/dashboard/class-dashboard.php:599
+msgid "Activate"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:598
+msgid "Activated"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:597
+msgid "Activating"
+msgstr ""
+
 #: inc/patterns/pricing.php:141
 msgid "Additional Block Patterns"
+msgstr ""
+
+#: inc/patterns/sidebar-basic.php:66
+msgid "Advertisement"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:152 inc/dashboard/class-dashboard.php:162
+msgid "Awesome starter templates for themes made by WPWheels."
 msgstr ""
 
 #: inc/patterns/pricing.php:38
@@ -57,8 +107,20 @@ msgstr ""
 msgid "Block Pattern Library"
 msgstr ""
 
+#: inc/dashboard/class-dashboard.php:329
+msgid "Blocks"
+msgstr ""
+
 #: inc/tgm/tgm.php:21
 msgid "BlockWheels"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:161
+msgid "Blockwheels"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:151
+msgid "Blockwheels Pro"
 msgstr ""
 
 #: inc/patterns/news.php:20
@@ -81,6 +143,35 @@ msgstr ""
 msgid "Call to Action Grid"
 msgstr ""
 
+#: inc/patterns/sidebar-basic.php:56
+msgid "Categories"
+msgstr ""
+
+#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+msgctxt "Color name"
+msgid "Base"
+msgstr ""
+
+#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+msgctxt "Color name"
+msgid "Contrast"
+msgstr ""
+
+#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+msgctxt "Color name"
+msgid "Neutral"
+msgstr ""
+
+#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
 #: inc/patterns/footer-mega.php:86
 msgid "Connect"
 msgstr ""
@@ -95,6 +186,24 @@ msgstr ""
 
 #: inc/patterns/footer-mega.php:71
 msgid "Copywriting"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:172
+msgid "Could not verifry the nonce."
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:293
+msgid "Create Your Ideal Site with FSE Blocks!"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "Blank"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Custom template name"
+msgid "No Title"
 msgstr ""
 
 #: inc/patterns/testimonials.php:120
@@ -113,6 +222,10 @@ msgstr ""
 msgid "Digital Marketing"
 msgstr ""
 
+#: inc/dashboard/class-dashboard.php:345 inc/dashboard/class-dashboard.php:405
+msgid "Dismiss this notice."
+msgstr ""
+
 #: inc/patterns/faq.php:82
 msgid "Do you offer a Guarantee?"
 msgstr ""
@@ -123,6 +236,21 @@ msgstr ""
 
 #: inc/patterns/footer-mega.php:107
 msgid "Dribbble"
+msgstr ""
+
+#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+msgctxt "Duotone name"
+msgid "Base and Contrast"
+msgstr ""
+
+#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+msgctxt "Duotone name"
+msgid "Primary and Contrast"
+msgstr ""
+
+#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+msgctxt "Duotone name"
+msgid "Secondary and Contrast"
 msgstr ""
 
 #: inc/patterns/pricing.php:164
@@ -158,6 +286,90 @@ msgstr ""
 msgid "Follow Subscribe"
 msgstr ""
 
+#: inc/patterns/sidebar-basic.php:78
+msgid "Follow Us"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Inter"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Oswald"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Outfit"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Playfair Display"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "PT Serif"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Public Sans"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font family name"
+msgid "Quicksand"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "36px"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "48px"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "60px"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "72px"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "xLarge"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Font size name"
+msgid "xSmall"
+msgstr ""
+
 #: inc/patterns/footer-basic.php:6
 msgid "Footer Basic"
 msgstr ""
@@ -178,13 +390,22 @@ msgstr ""
 msgid "Full Site Editing"
 msgstr ""
 
-#: inc/patterns/pricing.php:87 inc/patterns/pricing.php:155
-#: inc/patterns/pricing.php:213
+#: inc/patterns/sidebar-basic.php:22
+msgid "Gallery"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:308 inc/patterns/pricing.php:87
+#: inc/patterns/pricing.php:155 inc/patterns/pricing.php:213
 msgid "Get Started"
 msgstr ""
 
 #: inc/patterns/follow-subscribe.php:40
 msgid "Get the latest posts delivered right to your inbox"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Gradient name"
+msgid "Primary to Contrast"
 msgstr ""
 
 #: inc/patterns/header-basic.php:6
@@ -219,8 +440,24 @@ msgstr ""
 msgid "https://wpwheels.com/themes/wpwheels/"
 msgstr ""
 
+#: inc/dashboard/class-dashboard.php:141
+msgid "Import your content, widgets and theme settings with one click."
+msgstr ""
+
 #: inc/patterns/footer-mega.php:95
 msgid "Instagram"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:315
+msgid "Install & Activate"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:596
+msgid "Installed"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:595
+msgid "Installing"
 msgstr ""
 
 #: inc/patterns/team.php:107
@@ -233,6 +470,10 @@ msgstr ""
 
 #: inc/patterns/news.php:32
 msgid "Latest Blogs &amp; News"
+msgstr ""
+
+#: inc/patterns/sidebar-basic.php:12
+msgid "Latest Post"
 msgstr ""
 
 #: inc/patterns/news.php:6
@@ -303,12 +544,28 @@ msgstr ""
 msgid "Nina Larson"
 msgstr ""
 
-#: functions.php:97
+#: functions.php:110
 msgid "No Disc"
 msgstr ""
 
-#: inc/patterns/pricing.php:133
+#: inc/dashboard/class-dashboard.php:643
+msgid "No dismissable notice found."
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:174
+msgid "Not found!"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:660
+msgid "Notice Dismissed Successfully"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:140 inc/patterns/pricing.php:133
 msgid "One Click Demo Import"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:173
+msgid "Oops! something went wrong."
 msgstr ""
 
 #: inc/patterns/footer-mega.php:14
@@ -331,12 +588,16 @@ msgstr ""
 msgid "Our Team"
 msgstr ""
 
-#: functions.php:100 functions.php:107
+#: functions.php:113 functions.php:120
 msgid "Outline"
 msgstr ""
 
 #: inc/patterns/404-basic.php:10
 msgid "Page Not Found"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:333
+msgid "Patterns"
 msgstr ""
 
 #: inc/patterns/testimonials.php:116
@@ -351,6 +612,14 @@ msgstr ""
 msgid "Plans &amp; Pricing"
 msgstr ""
 
+#: inc/dashboard/class-dashboard.php:527
+msgid "Please specify a plugin"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:548
+msgid "Plugin Activated Successfully"
+msgstr ""
+
 #: inc/patterns/pricing.php:106
 msgid "Premium"
 msgstr ""
@@ -363,6 +632,10 @@ msgstr ""
 msgid "Pricing Table"
 msgstr ""
 
+#: functions.php:46
+msgid "Primary Menu"
+msgstr ""
+
 #: inc/patterns/query.php:6
 msgid "Query Posts"
 msgstr ""
@@ -371,7 +644,7 @@ msgstr ""
 msgid "Responsive Layouts"
 msgstr ""
 
-#: functions.php:86
+#: functions.php:99
 msgid "Reverse"
 msgstr ""
 
@@ -387,16 +660,53 @@ msgstr ""
 msgid "Services"
 msgstr ""
 
-#: functions.php:89 functions.php:93 functions.php:103
+#: functions.php:102 functions.php:106 functions.php:116
 msgid "Shadow"
+msgstr ""
+
+#: inc/patterns/block-patterns.php:67
+msgid "Sidebar"
+msgstr ""
+
+#: inc/patterns/sidebar-basic.php:6
+msgid "Sidebar Basic"
 msgstr ""
 
 #: inc/patterns/footer-mega.php:79
 msgid "Social Media"
 msgstr ""
 
-#: functions.php:90 functions.php:94 functions.php:104
+#: functions.php:103 functions.php:107 functions.php:117
 msgid "Solid"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:171
+msgid "Sorry, you do not have permission to perform this action."
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "xLarge"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Space size name"
+msgid "xSmall"
 msgstr ""
 
 #: inc/patterns/footer-mega.php:35
@@ -415,7 +725,22 @@ msgstr ""
 msgid "Stella Hudson"
 msgstr ""
 
-#: inc/helpers.php:41 inc/patterns/follow-subscribe.php:36
+#: styles/blue.json:1
+msgctxt "Style variation name"
+msgid "Blue"
+msgstr ""
+
+#: styles/green.json:1
+msgctxt "Style variation name"
+msgid "Green"
+msgstr ""
+
+#: styles/pink.json:1
+msgctxt "Style variation name"
+msgid "Pink"
+msgstr ""
+
+#: inc/helpers.php:59 inc/patterns/follow-subscribe.php:36
 msgid "Subscribe"
 msgstr ""
 
@@ -435,12 +760,45 @@ msgstr ""
 msgid "Team Members"
 msgstr ""
 
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json:1
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr ""
+
 #: inc/patterns/testimonials.php:6 inc/patterns/testimonials.php:20
 msgid "Testimonials"
 msgstr ""
 
+#. %s: Theme Name.
+#: inc/dashboard/class-dashboard.php:289
+#, php-format
+msgid "Thank you for selecting the %s Theme!"
+msgstr ""
+
+#. %s: Theme Name.
+#: inc/dashboard/class-dashboard.php:377
+#, php-format
+msgid "Thank you for using %s"
+msgstr ""
+
 #: inc/patterns/cta-grid.php:30
 msgid "The future is changing and we are a part of it."
+msgstr ""
+
+#: inc/patterns/block-patterns.php:68
+msgid ""
+"The Sidebar template defines a page area that can be found on the Page (With "
+"Sidebar) template."
 msgstr ""
 
 #: inc/patterns/footer-mega.php:99
@@ -504,4 +862,20 @@ msgid ""
 "important patterns including a hero and portfolio section, a call-to-action "
 "button, testimonials, and many more. WPWheels provides quicker and more "
 "efficient site development for any website."
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:369
+msgid "Wpwheels Screenshot"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:399
+msgid "⏰"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:397
+msgid "👍"
+msgstr ""
+
+#: inc/dashboard/class-dashboard.php:395
+msgid "😎"
 msgstr ""
