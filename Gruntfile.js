@@ -31,6 +31,7 @@ module.exports = function (grunt) {
           "!phpcs.xml",
           "!CONTRIBUTING.md",
           "!phpcs.ruleset.xml",
+          "!editorconfig.txt",
           /**
            * Are you developer? Then add below files.
            */

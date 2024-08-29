@@ -1,6 +1,6 @@
 == Changelog ==
 
-= 1.0.3 - 14 August 2024 =
+= 1.0.3 - 29 August 2024 =
 * Added RTL support
 * Added custom logo theme support and register primary nav menu
 * Fixes dashboard notice for multiple required plugins install and active

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPWheels\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-14 04:09+0000\n"
+"POT-Creation-Date: 2024-08-29 07:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -67,7 +67,7 @@ msgstr ""
 msgid "404 Basic"
 msgstr ""
 
-#: inc/patterns/cta-grid.php:25 inc/patterns/footer-mega.php:30
+#: inc/patterns/footer-mega.php:30 inc/patterns/cta-grid.php:25
 msgid "About Us"
 msgstr ""
 
@@ -147,27 +147,27 @@ msgstr ""
 msgid "Categories"
 msgstr ""
 
-#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+#: theme.json:1 styles/green.json:1 styles/blue.json:1 styles/pink.json:1
 msgctxt "Color name"
 msgid "Base"
 msgstr ""
 
-#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+#: theme.json:1 styles/green.json:1 styles/blue.json:1 styles/pink.json:1
 msgctxt "Color name"
 msgid "Contrast"
 msgstr ""
 
-#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+#: theme.json:1 styles/green.json:1 styles/blue.json:1 styles/pink.json:1
 msgctxt "Color name"
 msgid "Neutral"
 msgstr ""
 
-#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+#: theme.json:1 styles/green.json:1 styles/blue.json:1 styles/pink.json:1
 msgctxt "Color name"
 msgid "Primary"
 msgstr ""
 
-#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+#: theme.json:1 styles/green.json:1 styles/blue.json:1 styles/pink.json:1
 msgctxt "Color name"
 msgid "Secondary"
 msgstr ""
@@ -238,17 +238,17 @@ msgstr ""
 msgid "Dribbble"
 msgstr ""
 
-#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+#: theme.json:1 styles/green.json:1 styles/blue.json:1 styles/pink.json:1
 msgctxt "Duotone name"
 msgid "Base and Contrast"
 msgstr ""
 
-#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+#: theme.json:1 styles/green.json:1 styles/blue.json:1 styles/pink.json:1
 msgctxt "Duotone name"
 msgid "Primary and Contrast"
 msgstr ""
 
-#: theme.json:1 styles/blue.json:1 styles/green.json:1 styles/pink.json:1
+#: theme.json:1 styles/green.json:1 styles/blue.json:1 styles/pink.json:1
 msgctxt "Duotone name"
 msgid "Secondary and Contrast"
 msgstr ""
@@ -269,8 +269,8 @@ msgstr ""
 msgid "Facebook"
 msgstr ""
 
-#: inc/patterns/block-patterns.php:8 inc/patterns/faq.php:6
-#: inc/patterns/faq.php:19
+#: inc/patterns/faq.php:6 inc/patterns/faq.php:19
+#: inc/patterns/block-patterns.php:8
 msgid "FAQ"
 msgstr ""
 
@@ -394,8 +394,8 @@ msgstr ""
 msgid "Gallery"
 msgstr ""
 
-#: inc/dashboard/class-dashboard.php:308 inc/patterns/pricing.php:87
-#: inc/patterns/pricing.php:155 inc/patterns/pricing.php:213
+#: inc/patterns/pricing.php:87 inc/patterns/pricing.php:155
+#: inc/patterns/pricing.php:213 inc/dashboard/class-dashboard.php:308
 msgid "Get Started"
 msgstr ""
 
@@ -480,9 +480,9 @@ msgstr ""
 msgid "Latest Posts"
 msgstr ""
 
-#: inc/patterns/cta-grid.php:39 inc/patterns/footer-mega.php:23
 #: inc/patterns/services.php:54 inc/patterns/services.php:70
-#: inc/patterns/services.php:86
+#: inc/patterns/services.php:86 inc/patterns/footer-mega.php:23
+#: inc/patterns/cta-grid.php:39
 msgid "Learn More"
 msgstr ""
 
@@ -498,22 +498,22 @@ msgstr ""
 msgid "Lisa Ferrol"
 msgstr ""
 
-#: inc/patterns/faq.php:51 inc/patterns/faq.php:69 inc/patterns/faq.php:87
-#: inc/patterns/hero-classic.php:28 inc/patterns/services.php:49
-#: inc/patterns/services.php:65 inc/patterns/services.php:81
 #: inc/patterns/team.php:66 inc/patterns/team.php:94 inc/patterns/team.php:122
+#: inc/patterns/services.php:49 inc/patterns/services.php:65
+#: inc/patterns/services.php:81 inc/patterns/hero-classic.php:28
 #: inc/patterns/testimonials.php:50 inc/patterns/testimonials.php:78
-#: inc/patterns/testimonials.php:106
+#: inc/patterns/testimonials.php:106 inc/patterns/faq.php:51
+#: inc/patterns/faq.php:69 inc/patterns/faq.php:87
 msgid ""
 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
 "ligula eget dolor. Aenean massa."
 msgstr ""
 
-#: inc/patterns/cta-basic.php:22 inc/patterns/cta-grid.php:34
-#: inc/patterns/faq.php:28 inc/patterns/footer-mega.php:18
-#: inc/patterns/news.php:36 inc/patterns/pricing.php:28
-#: inc/patterns/services.php:36 inc/patterns/team.php:36
-#: inc/patterns/testimonials.php:36
+#: inc/patterns/team.php:36 inc/patterns/news.php:36
+#: inc/patterns/pricing.php:28 inc/patterns/services.php:36
+#: inc/patterns/footer-mega.php:18 inc/patterns/testimonials.php:36
+#: inc/patterns/faq.php:28 inc/patterns/cta-grid.php:34
+#: inc/patterns/cta-basic.php:22
 msgid ""
 "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo "
 "ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis "
@@ -560,7 +560,7 @@ msgstr ""
 msgid "Notice Dismissed Successfully"
 msgstr ""
 
-#: inc/dashboard/class-dashboard.php:140 inc/patterns/pricing.php:133
+#: inc/patterns/pricing.php:133 inc/dashboard/class-dashboard.php:140
 msgid "One Click Demo Import"
 msgstr ""
 
@@ -656,7 +656,7 @@ msgstr ""
 msgid "SEO Included"
 msgstr ""
 
-#: inc/patterns/footer-mega.php:58 inc/patterns/services.php:6
+#: inc/patterns/services.php:6 inc/patterns/footer-mega.php:58
 msgid "Services"
 msgstr ""
 
@@ -815,8 +815,8 @@ msgstr ""
 msgid "UX/UI"
 msgstr ""
 
-#: inc/patterns/news.php:26 inc/patterns/services.php:26
-#: inc/patterns/team.php:26 inc/patterns/testimonials.php:26
+#: inc/patterns/team.php:26 inc/patterns/news.php:26
+#: inc/patterns/services.php:26 inc/patterns/testimonials.php:26
 msgid "VIEW ALL"
 msgstr ""
 
@@ -841,8 +841,8 @@ msgid "WordPress"
 msgstr ""
 
 #. Name of the theme
-#: inc/patterns/block-patterns.php:7 inc/patterns/footer-basic.php:13
-#: inc/patterns/footer-mega.php:119
+#: inc/patterns/footer-basic.php:13 inc/patterns/footer-mega.php:119
+#: inc/patterns/block-patterns.php:7
 msgid "WPWheels"
 msgstr ""
 

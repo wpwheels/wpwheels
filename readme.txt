@@ -3,7 +3,7 @@
 Contributors        : wpwheels
 Tags                : block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, full-site-editing, one-column, template-editing, threaded-comments, translation-ready, wide-blocks, blog, portfolio
 Requires at least   : 6.2
-Tested up to        : 6.5
+Tested up to        : 6.6
 Requires PHP        : 7.2
 Stable tag          : 1.0.3
 License             : GPLv3 or later
