@@ -296,7 +296,7 @@ if ( ! class_exists( 'Wpwheels_Dashboard' ) ) {
                 <?php
 								printf(
 									/* translators: %s: Theme Name. */
-									__( '%1$s is now installed and ready for use. We highly recommend installing and activating the <b>BlockWheels</b> Plugin to unlock freemium website templates/demos, 20+ advanced Gutenberg Blocks, and patterns, facilitating the creation of stunning websites with utmost ease.', 'wpwheels' ),
+									__( '%1$s is now installed and ready for use. We highly recommend installing and activating the <b>BlockWheels</b> Plugin to unlock freemium website templates/demos, 25+ advanced Gutenberg Blocks, and patterns, facilitating the creation of stunning websites with utmost ease.', 'wpwheels' ),
 									$this->theme_name,
 								);
 							?>
